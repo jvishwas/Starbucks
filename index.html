@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo">
+                <img src="img/starbucks-logo-png-transparent.png" alt="logo">
+            </a>
+            <ul>
+                <li><a href="#">Home</a>
+                <li><a href="#">Menu</a>
+                <li><a href="#">What's New</a>
+                <li><a href="#">Contact Us</a>
+
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text-Box">
+                <h2>It's not just Cofee<br> It's <span>StarBucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cumque harum fuga, eius vitae,
+                    beatae ut placeat eligendi et deleniti facere officia veritatis aspernatur accusamus ab perspiciatis
+                    dolores blanditiis alias?</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="img-Box">
+                <img src="img/3.png" alt="img" class="starbucks">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="img/img_42.png" onclick="myChoise('img/img_42.png'); bgcolorChange('#B68C6E')"></li>
+            <li><img src="img/my_img.png" onclick="myChoise('img/my_img.png'); bgcolorChange('#007341')"></li>
+            <li><img src="img/3.png" onclick="myChoise('img/3.png') ; bgcolorChange('#E7A358')"></li>
+
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="img/fb-logo-circle-png-6.png" alt="Not Found">
+            <li><a href="#"><img src="img/my-insta_conv.png" alt="Not Found">
+            <li><a href="#"><img src="img/my_twitter2.png" alt="Not Found">
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function myChoise(e)
+        {
+            document.querySelector('.starbucks').src = e;
+        }
+        function bgcolorChange(color)
+        {
+            let circle = document.querySelector(".circle");
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
